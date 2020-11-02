@@ -1,0 +1,82 @@
+{% extends 'base_login.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %} Login {% endblock %}
+
+{% block content%}
+
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="static/login/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link href="{% static 'login/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+<!--===============================================================================================-->
+	<link href="{% static 'login/fonts/font-awesome-4.7.0/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+<!--===============================================================================================-->
+	<link href="{% static 'login/vendor/animate/animate.css'%}" rel="stylesheet" type="text/css">
+<!--===============================================================================================-->	
+	<link href="{% static 'login/vendor/css-hamburgers/hamburgers.min.css'%}" rel="stylesheet" type="text/css">
+<!--===============================================================================================-->
+	<link href="{% static 'login/vendor/select2/select2.min.css'%}" rel="stylesheet" type="text/css">
+<!--===============================================================================================-->
+	<link href="{% static 'login/css/util.css'%}" rel="stylesheet" type="text/css">
+<!--===============================================================================================-->
+	<link href="{% static 'login/css/main.css'%}" rel="stylesheet" type="text/css">
+<!--===============================================================================================-->
+	
+	<div class="limiter">
+	<div class="mb-5"></div>
+	<div class="container-login100">
+		<div class="wrap-login100">
+		<div class="login100-pic js-tilt" data-tilt>
+					<img src="{% static 'img/profile.png'%}" alt="IMG">
+				</div>
+			<div class="mb-5"></div>
+			<form method="POST">
+				{% csrf_token %}
+				<div class="form-group">
+					<h1>Silahkan Login</h1>
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					{{ form.username|as_crispy_field }}
+					</div>
+				<div class="wrap-input100 validate-input" data-validate = "Password is required">
+				<div class="form-group">
+					{{ form.password|as_crispy_field }}
+				</div>
+				<button type="submit" class="btn btn-lg btn-block btn-blue">
+					<button class="login100-form-btn" href="{%url 'home' %}">
+						Login
+					</button>
+				</div>
+				</button><p>
+				<a href="{%url 'registrasi'%}">Registrasi?</a>
+			</form>
+		</div>
+		<div class="col-4"></div>
+	</div>
+</div>
+
+
+<!--===============================================================================================-->			
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+<!--===============================================================================================-->	
+	<script src="{% static 'login/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/bootstrap/js/popper.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'login/vendor/tilt/tilt.jquery.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+<!--===============================================================================================-->
+
+{% endblock %}

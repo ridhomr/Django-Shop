@@ -1,0 +1,41 @@
+{% extends 'base_produk.html' %}
+{% load static %}
+
+
+{% block title%} Membeli {% endblock %}
+
+{% block content%}
+<br>
+<br>
+<section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Produk</h2>
+        <hr class="star-dark mb-5">
+        <a class="btn btn-success" href="{% url 'add_product_submit' %}">
+            <i class="fas fa-download mr-2"></i>
+            Tambahkan Produk
+          </a>
+          <br>
+          <br>
+       <div class="row">
+          <div class="card" style="width: 100%;">
+              <ul class="list-group list-group-flush" >
+                {% for produk in produk %}
+                <li class="list-group-item" style="display: flex; flex-direction: row; justify-content: space-between;">
+                  <span>{{produk.nama}}</span> 
+                  <span>
+                    <a style="color:#DD5043;" href="{%url 'hapus_produk' produk.id %}"><i class="fas fa-trash"></i> Hapus</a>
+                    <a style="margin-left:10px;"href="{%url 'sunting_produk' produk.id %}"><i class="fas fa-pencil-alt"></i> Sunting</a>
+                  </span>
+                </li>
+                {%empty%}
+                  <li class="list-group-item">Tidak ada produk</li>
+                {%endfor%}
+                  
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+
+{% endblock%}

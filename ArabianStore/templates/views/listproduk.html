@@ -1,0 +1,30 @@
+{% extends 'base_produk.html' %}
+{% load static %}
+
+
+{% block title%} Membeli {% endblock %}
+
+{% block content%}
+<br>
+<br>
+<section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Produk</h2>
+          <hr class="star-dark mb-5">
+          <div class="row">
+          {% for produk in produk %}
+          <div class="card col-md-6 col-lg-4" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{produk.nama}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{produk.harga}}</h6>
+              <p class="card-text">{{produk.deskripsi}}</p>
+              <a href="{%url 'on_sale'%}" class="card-link">Membeli</a>
+            </div>
+          </div>
+          {% empty %}
+            <h1>Tidak ada produk :(</h1>
+          {% endfor %}
+       </div>
+      </div>
+    </section>
+{% endblock%}

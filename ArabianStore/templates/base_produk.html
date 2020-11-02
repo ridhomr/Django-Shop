@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <!--===============================================================================================-->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet" type="text/css">
+    <!--===============================================================================================-->
+    <link href="{% static 'css/open-iconic-bootstrap.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/animate.css'%}" rel="stylesheet" type="text/css">
+    <!--===============================================================================================-->
+    <link href="{% static 'css/owl.carousel.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/owl.theme.default.min.css'%}" rel="stylesheet" type="text/css">
+  {%block newcss%}
+
+
+  {%endblock%}
+  <title>{% block title %} ArabianStore {% endblock %}</title>
+  <div id="loader-wrapper">
+         <div id="loader"></div>
+         <div class="loader-section section-left"></div>
+         <div class="loader-section section-right"></div>
+   </div>
+</head>
+<body id="page-top">
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="{% url 'home' %}">Arabian Store</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'belanja' %}">Belanja</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger icon-shopping_cart" href="{% url 'produk' %}">Terbeli</a>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'adminpProduks' %}">Produk</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{% url 'adminKategoris' %}"> Kategori</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="navbar-brand">Hi, {{user}}</a>
+              <a class="btn btn-danger my-2 my-sm-0" href="/login">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+{% block content%}
+
+
+{% endblock%}
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+          <footer class="ftco-footer ftco-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="mouse">
+            <a href="#" class="mouse-icon">
+              <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+            </a>
+          </div>
+        </div>
+        <h5 class="text-white text-uppercase">Follow Me :</h5><hr>
+        <a href="https://web.facebook.com/ridho.marhaban.5?_rdc=1&_rdr"><img alt="Facebook" border="0" height="55" src="https://1.bp.blogspot.com/-uZ8Xxh94d8g/Wurunx3skaI/AAAAAAAABTc/W8CUT8-JKFwza7t98r2ssogpCOecVLzlwCLcBGAs/s200/logo-facebook-bulat-biru-256x256.png" title="Find Us on Facebook" /></a>&nbsp;
+
+        <a href="https://mobile.twitter.com/RidhoMarhaban7"><img alt="Twitter" border="0" height="55" src="https://3.bp.blogspot.com/-h1TC4hqLhps/WurvQQbnhII/AAAAAAAABTk/bJV2cCuRBDgbkWU5AMy5Q3boPgUt_V1UACLcBGAs/s200/twitter-png-3.png" title="Follow Us On Twitter" /></a>&nbsp;
+
+        <a href="https://github.com/githubkalian/"><img alt="Github" border="0" height="55" src="https://github.com/fluidicon.png" title="Follow Us On Github" /></a>
+
+        <a href="https://www.instagram.com/ridhomarhaban/?hl=id"><img alt="Instagram" border="0" height="55" src="https://4.bp.blogspot.com/-RW_Z3hlVDag/WugFYAYvnJI/AAAAAAAABNc/Mz113nVoIhMQSb3MebADydniofaVajyggCLcBGAs/s200/instagram.png" title="Follow Us On Instagram" /></a>&nbsp;
+
+        <a href="https://www.youtube.com/channel/UCMDV2q7w0hqHSpb6cXDABcA"><img alt="Youtube" border="0" height="55" src="https://3.bp.blogspot.com/-8mvWSfh9xsM/WugF1FRbSHI/AAAAAAAABNw/T1iu5zcaLlktjAx_-6Pt8KP3-6K2rGLWgCLcBGAs/s200/youtube_14198.png" title="Follow Us On Youtube" /></a>
+
+        <a href="alamat google kalian"><img alt="Google" border="0" height="55" src="//www.gstatic.com/images/branding/product/1x/google_plus_64dp.png" title="Follow Us On Google" /></a>
+        <p>
+          <div class="col-md text-center">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3 text-center">
+                  <span class="icon icon-map-marker text-center"></span><span class="text-center">Kalimantan Barat, Pontianak, Desa Anjungan Beringin 2, RT 009 RW 002</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+        <small>Copyright &copy; ArabianStore</small>
+      </div>
+    </div>
+  <div class="login100-more" style="background-image: url('static/images/bg-01.jpg');">
+  </div>
+</body>
+</html>

@@ -1,0 +1,580 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title%} ArabianStore {% endblock %}
+
+{% block content %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/open-iconic-bootstrap.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/animate.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/owl.carousel.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/owl.theme.default.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/magnific-popup.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/aos.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/ionicons.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/bootstrap-datepicker.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/jquery.timepicker.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/flaticon.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/icomoon.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/style.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      background-image: url('{% static "images/bg2.jpg" %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+
+
+
+    .glow {
+      font-size: 30px;
+      color: #ffffff;
+      text-align: center;
+      font-family: Monotype Corsiva;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #orange, 0 0 60px #9524f343, 0 0 70px #orange;
+      }
+
+      to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #000;
+      }
+    }
+  </style>
+    <header class="masthead bg-warning text-black text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="{% static 'img/profile.png'%}" alt="">
+            <h1 class="display-4 glow">Welcome To Arabian Store</h1><p>
+            <h3 class="display-4 glow">~Start Your Day With I'm Parfum~</h3>
+        </div>
+    </header>
+
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container">
+        <div class="row no-gutters ftco-services">
+          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-4 py-md-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+                    <span class="flaticon-bag"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Free Shipping</h3>
+                <p>Siapa pun yang mengatakan uang tidak bisa membeli kebahagian sama sekali tidak tahu kemana harus pergi berbelanja di store arabian.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-4 py-md-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+                    <span class="flaticon-customer-service"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Support Customer</h3>
+                <p>Pelayanan Sempurna Ternyata Tidak Ditentukan Oleh Perilaku Pemberi Pelayanan, Tapi Lebih Banyak Ditentukan Oleh Persepsi Dan Perasaan Dari Penerima Pelayanan.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services p-4 py-md-5">
+              <div class="icon d-flex justify-content-center align-items-center mb-4">
+                    <span class="flaticon-payment-security"></span>
+              </div>
+              <div class="media-body">
+                <h3 class="heading">Secure Payments</h3>
+                <p> pembeli dapat memilih barang yang diinginkan untuk kemudian melakukan pembayaran melalui rekening bank yang telah disepakati bersama.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="ftco-section bg-light">
+        <section id="about" class="about section-padding-top">
+        <div class="container">
+            <div class="section-title">
+                <h2>{About <span>Us}</span></h2>
+                <span class="s-title-icon"><i class="icofont icofont-diamond"></i></span>
+            </div>
+            <div class="row">
+                <!-- About image -->
+                <div class="col-md-6">
+                    <a href="#" class="img-about">
+                        <img src="{% static 'images/parfum/parfum.jpg' %}" alt="" class="img-responsive">
+                    </a>
+                </div>
+                <div class="col-md-6">
+            <!-- About text-->
+                    <div class="about-details">
+                        <h5>Arabian~</h5>
+                        <a class="row">Memakai parfum adalah salah satu langkah untuk bisa mendapatkan kepercayaan diri. Aroma tubuh yang segar bisa meningkatkan semangat Anda untuk beraktivitas. Jangan salah memilih parfum, ya. Untuk sehari-hari, Anda bisa memakai minyak wangi dengan aroma lembut seperti parfum Arab dalam rekomendasi berikut ini.</a>
+                        <ul class="image-contact-list">
+                            <li><i class="icofont icofont-speech-comments"></i> <span>Aroma yang menyegarkan</span></li>
+                            <li><i class="icofont icofont-package"></i> <span>Parfum Beraroma Manis</span></li>
+                            <li><i class="icofont icofont-settings"></i> <span>Tampil Fresh Sepanjang Hari</span></li>
+                            <li><i class="icofont icofont-gift"></i> <span> menambah kepercayaan diri</span></li>
+
+                        </ul>
+                        <a class="btn btn-default btn-style hvr-shutter-out-vertical bg-warning" href="{% url 'detail_about' %}">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+                <div class="row justify-content-center mb-3 pb-3">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h2 class="mb-4">12 Rekomendasi Parfum dari Arab yang Banyak Digemari Masyarakat</h2>
+            <p>Bersama Arabian tampil fresh sepanjang hari</p>
+          </div>
+        </div>          
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product d-flex flex-column">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian1.jpg" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Al Raudhah</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum1' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product d-flex flex-column">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian2.jpg" alt="Colorlib Template">
+                            <span class="status">50% Off</span>
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Saffron Al Musk</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum2' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian4.png" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Tom Arabian Oudh</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum3' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian5.png" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Civet Musk Attras</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum4' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product d-flex flex-column">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian6.png" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Ambergris Royale</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum5' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product d-flex flex-column">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian7.jpg" alt="Colorlib Template">
+                            <span class="status">50% Off</span>
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Attar Al Khaleej</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum6' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian8.jpg" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Beutari Living</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum7' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian9.jpeg" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Arabian Rose Oudh</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum8' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian11.jpg" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Musk Bahry</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum9' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian12.jpg" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Tobacco Vanile</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum10' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian13.jpg" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Tom Oud</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum11' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-3 ftco-animate d-flex">
+                    <div class="product">
+                        <a href="#" class="img-prod"><img class="img-fluid" src="static/images/parfum/arabian14.png" alt="Colorlib Template">
+                            <div class="overlay"></div>
+                        </a>
+                        <div class="text py-3 pb-4 px-3">
+                            <div class="d-flex">
+                                <div class="cat">
+                                    <span>Parfum</span>
+                                </div>
+                                <div class="rating">
+                                    <p class="text-right mb-0">
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                        <a href="#"><span class="ion-ios-star-outline"></span></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <h3><a href="#">Golden Sand</a></h3>
+                            <div class="pricing">
+                                <p class="price"><span>$120.00</span></p>
+                            </div>
+                            <p class="bottom-area d-flex px-3">
+                                <a href="{% url 'detail_parfum12' %}" class="add-to-cart text-center py-2 mr-1"><span>DETAIL<i class="ml-1"></i></span></a>
+                                <a href="{% url 'login' %}" class="buy-now text-center py-2">BELI<span><i class="ion-ios-cart ml-1"></i></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery-migrate-3.0.1.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/popper.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/bootstrap.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.easing.1.3.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.waypoints.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.stellar.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/owl.carousel.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.magnific-popup.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/aos.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.animateNumber.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/bootstrap-datepicker.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/scrollax.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/google-map.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/main.js'%}"></script>
+<!--===============================================================================================-->
+{% endblock %}

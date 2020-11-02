@@ -1,0 +1,121 @@
+{% extends 'base_produk.html' %}
+{% load static %}
+
+
+{% block title%} ArabianStore {% endblock %}
+
+{% block content %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/open-iconic-bootstrap.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/animate.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/owl.carousel.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/owl.theme.default.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/magnific-popup.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/aos.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/ionicons.min.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/bootstrap-datepicker.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/jquery.timepicker.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/flaticon.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/icomoon.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link href="{% static 'home/css/style.css'%}" rel="stylesheet">
+    <!--===============================================================================================-->
+
+    <header class="masthead bg-warning text-black text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="{% static 'img/profile.png'%}" alt="">
+        <h1 class="text-uppercase mb-0">Welcome To Arabian Store</h1>
+        <h2 class="font-weight-light mb-0">~Start Your Day With  I'm Parfum~</h2>
+      </div>
+    </header>
+
+    <section class="ftco-section bg-light">
+        <section id="about" class="about section-padding-top">
+        <div class="container">
+            <div class="section-title">
+                <h2>Detail<span>:  AL RAUDHAH</span></h2>
+                <span class="s-title-icon"><i class="icofont icofont-diamond"></i></span>
+            </div>
+            <div class="row">
+                <!-- About image -->
+                <div class="col-md-6">
+                    <a href="#" class="img-about">
+                        <img src="{% static 'images/parfum/arabian1.jpg' %}" alt="" class="img-responsive" width="100%">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-details">
+                        <h5>Arabian~</h5>
+                        <h3>Deskripsi : </h3>
+                        <p>1. Aroma RAUDAH Parfum best seller. Sangat manis dan semerbak. Aroma karpet masjid nabawi dan raudhah. Pelepas rindu bagi anda yg sudah pernah berkunjung ke nabawi dan raudhah. Kini hadir packing lebih eksklusif. Aroma lebih wah. Dan 2 in 1 dalam pemakaian. Bisa roll on atau oles</p>
+                        <h3>Keterangan :</h3>
+                        <ul class="image-contact-list">
+                            <li><i class="icofont icofont-speech-comments"></i> <span>* Parfum original asli dari kota Madinah</span></li>
+                            <li><i class="icofont icofont-package"></i> <span>* Parfum Beraroma Manis cocok untuk wanita</span></li>
+                            <li><i class="icofont icofont-settings"></i> <span>* Packing dalam botol kecil khas arab, kotak yg eksklusif  dan Pouch yg cantik</span></li>
+                            <li><i class="icofont icofont-gift"></i> <span>* Isi 3 ml/botol</span></li>
+                        </ul>
+                        <h3>Bahan : </h3>
+                            <ul>
+                                <li>Minyak wangi sintetis.</li>
+                                <li>Limonene</li>
+                                <li>Bunga blossom</li>
+                                <li>Rempah-rempah</li>
+                            </ul>
+                        <a class="btn btn-default btn-style hvr-shutter-out-vertical bg-warning text-white text-uppercase" href="{% url 'belanja' %}">Kembali</a>
+                        <a class="ion-ios-cart ml-1 btn btn-default btn-style hvr-shutter-out-vertical bg-danger text-white text-uppercase" href="{% url 'add_product_submit' %}">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+    <!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery-migrate-3.0.1.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/popper.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/bootstrap.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.easing.1.3.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.waypoints.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.stellar.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/owl.carousel.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.magnific-popup.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/aos.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/jquery.animateNumber.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/bootstrap-datepicker.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/scrollax.min.js'%}"></script>
+<!--===============================================================================================-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/google-map.js'%}"></script>
+<!--===============================================================================================-->
+<script src="{% static 'home/js/main.js'%}"></script>
+<!--===============================================================================================-->
+{% endblock %}
